@@ -1,0 +1,8 @@
+[
+    {
+        "dns" : "hellodati.net",
+        "controller" : "api",
+        "business" : "api",
+        "https_only" : "true"
+    }
+]

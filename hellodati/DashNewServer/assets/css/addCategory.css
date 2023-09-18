@@ -1,0 +1,115 @@
+.category_form{
+    position: absolute;
+    z-index: 10;
+    width: 500px;
+    right: 0px;
+    top: 60px;
+    border: 1px solid black;
+    border-radius: 7px;
+    background-color: #eeeeee;
+    border: 1px solid #111f35;
+    font-size: 1.2em;
+    display: none;
+
+
+}
+.category_form .title_form{
+    background-color: #111f35;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.category_form .form_element{
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+.category_form .form_element > p{
+    font-size: 0.8em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: black;
+    margin-right: 20px;
+    font-family: CLB;
+}
+.category_form .form_element > input{
+    width: 90%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    border: 1px solid #bfbfbf;
+}
+.category_form .form_element  .category_add {
+    background-color: #3f86be;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 0;
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.category_form .form_element  .category_add:hover {
+    background-color: #1a5889;
+}
+.category_form .form_element  .category_add span{
+    background-color: #1a5889;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: white;
+    margin-right: 10px;
+    box-sizing: border-box;
+    font-size: 1.3em;
+    font-weight: 100;
+    margin-left: 3px;
+    margin-top: 1px;
+}
+
+.category_form .form_element  .category_add p{
+    color: white;
+    font-weight: 10;
+    margin: 0;
+    padding: 0;
+    transition: .5s;
+    font-family: CLB
+}
+
+.category_form .form_element .categories{
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+.category_form .form_element .categories > span{
+    background-color: #111f35;
+    color: white;
+    margin-right: 20px;
+    position: relative;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 16px;
+    font-family: CL;
+    text-transform: uppercase;
+
+}
+
+
+
+.category_form .form_element .categories > span img {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    height: 15px;
+    cursor: pointer;
+}

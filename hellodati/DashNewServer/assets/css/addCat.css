@@ -1,0 +1,205 @@
+.container_add_cat{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    text-align: right;
+    z-index: 20;
+    cursor: pointer;
+
+}
+.add_languge_container{
+    margin-right: 2%;
+    margin-top: 30vh;
+    width: 80%;
+    max-width: 80%;
+    padding: 2%;
+    background-color: #eeeeee;
+    display: inline-block;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 0px solid #000;
+    border-radius: 5px;
+    z-index: 30;
+    height: 250px;
+}
+.add_languge_container .add_cat_by-language{
+    width: 44%;
+    height: 100%;
+    /* background-color: darkgreen; */
+    display: inline-block;
+    float: left;
+
+}
+.add_languge_container .add_cat_by-language-item{
+    width: 47%;
+    display: inline-block;
+    float: left;
+}
+.add_languge_container .add_cat_by-language-image{
+     width: 47%;
+     display: inline-block;
+     float: right;
+ }
+.add_languge_container .add_cat_by-language-image .imageUploader{
+    position: relative;
+    background-color: white;
+    height: 120px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #d2d2d2;
+    /* margin-top: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.add_languge_container .add_cat_by-language-image .imageUploader input{
+    position: fixed;
+    top: 9999px;
+}
+.add_languge_container .add_cat_by-language .tra_item{
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.add_languge_container .add_cat_by-language .tra_item .lang{
+    width: 10%;
+    display: inline-block;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgb(23, 55, 119);
+    text-align: center;
+    margin-left: 5%;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 14px;
+
+}
+.add_languge_container .add_cat_by-language .tra_item .text{
+    width: 80%;
+    display: inline-block;
+    padding: 0px;
+    float: right;
+    margin-right: 1%;
+}
+.add_languge_container .add_cat_by-language .tra_item .text input{
+    width: 100%;
+    height: 30px;
+    padding: 0px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline:none;
+    border-radius: 5px;
+    border: none;
+    padding-left: 2%;
+    border: 1px solid #d2d2d2;
+}
+.add_languge_container  .categories{
+    width: 42%;
+    padding-left: 1%;
+    padding-right: 1%;
+    height: 100%;
+    /* background-color: darkseagreen; */
+    display: inline-block;
+    float: left;
+    overflow-y: auto;
+}
+.add_languge_container  .categories > span{
+    border: 1px solid #1a3e64;
+    color: #1a3e64;
+    margin: 10px;
+    position: relative;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 16px;
+    font-family: CL;
+    text-transform: uppercase;
+    float: left;
+}
+.add_languge_container  .categories  > span > span{
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    line-height: 15px;
+    cursor: pointer;
+    background-color: #1a3e64;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: CLB;
+}
+.add_languge_container  .categories > span img{
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    height: 15px;
+    cursor: pointer;
+}
+.add_languge_container .buttons_container{
+    width: 10%;
+    height: 100%;
+    /* background-color: red; */
+    display: inline-block;
+
+}
+.add_languge_container .buttons_container > div{
+    height: 100px;
+    position: relative;
+}
+.add_languge_container .buttons_container .confirm{
+    width: 100%;;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 4px;
+    background-color: rgb(81, 185, 96);
+    cursor: pointer;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.add_languge_container .buttons_container .confirm img{
+    width: 16px;
+    height: 16px;
+    margin-right: 10%;
+}
+.add_languge_container .buttons_container .confirm p{
+    display: inline-block;
+    margin: 0px;
+}
+.add_languge_container .buttons_container .cancel{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 4px;
+    background-color: rgb(213, 78, 69);
+    cursor: pointer;
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+}
+.add_languge_container .buttons_container .cancel img{
+    width: 16px;
+    height: 16px;
+    margin-right: 10%;
+}
+.add_languge_container .buttons_container .cancel p{
+    display: inline-block;
+    margin: 0px;
+}

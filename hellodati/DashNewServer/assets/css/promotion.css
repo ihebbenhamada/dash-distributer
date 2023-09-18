@@ -1,0 +1,147 @@
+/* promo  */
+.openingAndTimes  .promotion_container{
+    background-color: #eeeeee;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 4px;
+    display: none;
+    height: 220px;
+    justify-content: center;
+}
+
+.openingAndTimes  .promotion_container .promotion_title{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 15%;
+    padding-top: 50px;
+    position: relative;
+    top: 30px;
+}
+.openingAndTimes  .promotion_container .promotion_title .promotion_title_icon{
+    display: flex;
+    align-items: center;
+    width: 80px;
+    justify-content: space-between;
+}
+.openingAndTimes  .promotion_container .promotion_title .promotion_title_icon p{
+    color: #d54751;
+}
+.openingAndTimes  .promotion_container .promotion_title  .switcher_promo{
+    position: absolute;
+    top: 90px;
+    left: 160px;
+
+}
+
+@media screen and (max-width:1280px) {
+    .openingAndTimes  .promotion_container .promotion_title  .switcher_promo{
+        position: absolute;
+        top: 90px;
+        left: 120px;
+    
+    }
+  }
+
+
+.openingAndTimes  .promotion_container .promotion_main{
+    width: 75%;
+    margin-top: 40px;
+}
+
+.openingAndTimes  .promotion_container .promotion_main .time_container_promo{
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #d2d2d2;
+    display: flex;
+    align-items: center;
+    padding: 1%;
+}
+.openingAndTimes  .promotion_container .promotion_main .time_container_promo .time{
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+    width: 20%;
+    justify-content: space-around;
+}
+.openingAndTimes  .promotion_container .promotion_main .time_container_promo .time input{
+    width: 100px;
+    border: none;
+}
+.openingAndTimes  .promotion_container .promotion_main .time_container_promo .date{
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+    width: 20%;
+    justify-content: space-around;
+}
+.openingAndTimes  .promotion_container .promotion_main .time_container_promo .date input{
+    border-right: 1px solid black;
+    border: none;
+}
+.openingAndTimes  .promotion_container .promotion_main .value_container_promo{
+    margin-bottom: 30px;
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 1%;
+}
+.openingAndTimes  .promotion_container .promotion_main .value_container_promo .value_prix{
+    display: flex;
+    background-color: #ffffff;
+    margin-right: 3%;
+    border-radius: 5px;
+    width: 50%;
+    justify-content: space-around;
+    border: solid 1px #d8d8d8;
+}
+.openingAndTimes  .promotion_container .promotion_main .value_container_promo .value_prix p{
+    color: #b6b6b6;
+}
+.openingAndTimes  .promotion_container .promotion_main .value_container_promo .value_prix input{
+    width: 60px;
+    border: none;
+}
+.openingAndTimes  .promotion_container .promotion_main .value_container_promo .value_promo{
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 50%;
+    justify-content: space-around;
+    border: solid 1px #d8d8d8;
+}
+.openingAndTimes  .promotion_container .promotion_main .value_container_promo .value_promo p{
+    color: #b6b6b6;
+}
+.openingAndTimes  .promotion_container .promotion_main .value_container_promo .value_promo input{
+    width: 60px;
+    border: none;
+}
+/* no promo  */
+.openingAndTimes .has_no_promotion {
+    padding-left: 3%;
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+    background-color: #eeeeee;
+    border-radius: 4px;
+    position: relative;
+}
+.openingAndTimes .has_no_promotion >div{
+    display: flex;
+    width: 200px;
+    align-items: center;
+}
+.openingAndTimes .has_no_promotion p{
+    color: rgb(202, 42, 67);
+    margin-left: 15px;
+    margin-right: 40px;
+}
+/* end no promo  */
+
+

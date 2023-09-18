@@ -1,0 +1,77 @@
+.rate_container{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 48%;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+.container_pourcent_details{
+    display: inline-block;
+    height: 100%;
+    float: right;
+    position: absolute;
+    top: 0px;
+    left: 20%;
+    width: 80%;
+}
+.container_pourcent .stars_container{
+    width: 100%;
+    height: 100%;
+}
+.stars_container .pourcent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.stars_container .pourcent .stars{
+    display: flex;
+    justify-content: flex-end;
+    width: 48%;
+    height: 100%;
+}
+.stars_container .pourcent .progress{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    height: 100%;
+}
+
+
+.stars_container .pourcent div .star{
+    color: #ffde66;
+    display: flex;
+    justify-content: flex-end;
+}
+.stars_container .pourcent .progress .containe_pourcent {
+    width: 200px;
+    height: 3px;
+    background: #fafafa;
+    margin-left: 10px;
+    border: 0px solid;
+    border-radius: 200px;
+}
+.stars_container .pourcent .progress .containe_pourcent .the_pourcent {
+
+    height: 3px;
+    background: #374a68;
+    border: 0px solid;
+    border-radius: 200px;
+}
+.note_rate{
+    width: 13%;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+.note_rate .note{
+    color: #374a68;
+    font-size: 50px;
+    margin-bottom: 25%;
+}
+.note_rate .comment_note{
+    color: #ffde66;
+    font-size: 20px;
+}

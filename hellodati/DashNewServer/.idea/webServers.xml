@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="7b795809-a264-4818-a3ba-ed6d7ca253ae" name="dati" url="https://business.datihotel.com">
+        <fileTransfer host="51.210.255.103" port="22" rootFolder="/var/www/dashDati" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="0c215811-8c22-4b16-a34c-85b8812dabbe" name="datiApi" url="https://apitndati.com">
+        <fileTransfer host="apitndati.com" port="22" rootFolder="/var/www/api2/src" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

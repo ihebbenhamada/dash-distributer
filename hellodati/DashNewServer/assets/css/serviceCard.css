@@ -1,0 +1,85 @@
+.service_card {
+    width: 24%;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-flex;
+    display: -webkit-inline-flex;
+    align-items: flex-start;
+    background-size: 100% 100%;
+    flex-flow: column;
+    justify-content: flex-end;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    -webkit-box-shadow: 2px -2px 11px -2px rgba(0,0,0,0.76);
+    -moz-box-shadow: 2px -2px 11px -2px rgba(0,0,0,0.76);
+    box-shadow: 2px -2px 11px -2px rgba(0,0,0,0.76);
+}
+.service_card .title{
+    position: absolute;
+    top: 45px;
+    left: 20px;
+    color: rgb(116, 144, 75);
+    font-family: 'CLB';
+
+}
+
+.service_card .service_action img{
+    width: 30px;
+    height: 30px;
+}
+
+#serviceCardContainer{
+    display: contents;
+}
+
+@media screen and (max-width:1700px) {
+    .service_card {
+        width: 32%;
+    }
+
+
+}
+
+@media screen and (max-width:1200px) {
+    .service_card {
+        width: 48%;
+    }
+
+
+}
+
+@media screen and (max-width:1000px) {
+    .service_card {
+        width: 80%;
+    }
+
+}
+.service_action {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 0px 0px 10px 10px;
+
+}
+.service_action p {
+    color: white;
+    font-family: 'CLB';
+    font-size: 12px;
+}
+.service_action img{
+    height: 25px;
+    width: 25px;
+
+}

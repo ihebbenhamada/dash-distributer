@@ -1,0 +1,19 @@
+.container_msg_erreur{
+    display: inline-block;
+    width: 100%;
+    float: left;
+    text-align: left;
+    max-height: 100px;
+    overflow: auto;
+    margin-bottom: 10px;
+}
+.container_msg_erreur .msg_erreur{
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border-radius: 5px;
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    border: 1px solid transparent;
+    margin: 5px;
+}

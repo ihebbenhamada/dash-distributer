@@ -1,0 +1,132 @@
+
+.header_container{
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 50px;
+    justify-content: space-between;
+
+}
+
+.search_container{
+    width: 80%;
+    background: #e0e0e0;
+    display: flex;
+    border-radius:4px ;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px dashed #374a68;
+    padding-left: 4px;
+}
+
+.title_search{
+    width: 15%;
+    height: 100%;
+    text-align: center;
+    color: #374a68;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.inputs{
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    margin-right: 15px;
+}
+
+.img_search{
+    width: 7%;
+    text-align: center;
+}
+
+.img_search img{
+    width: 53%;
+}
+
+.btn_add_header{
+    width: 15%;
+    display: flex;
+    background:#1aa0e0 ;
+    align-items: center;
+    color: #ffffff;
+    border-radius: 4px;
+    justify-content: center;
+}
+
+.btn_add_header:hover{
+    background: #337cc0;
+    cursor: pointer;
+}
+
+.btn_add_header p{
+    font-family: CLB;
+    margin-left: 20px;
+}
+
+.inputs input{
+    padding: 8px;
+    background: #ffffff;
+    margin: 5px;
+    color: #374a68;
+    -webkit-appearance: none;
+    border: 1px solid #374a68;
+    width: 25%;
+    border-radius: 4px;
+}
+
+.inputs select{
+
+     padding: 8px;
+     color: #374a68;
+     border: 1px solid #374a68;
+     width: 25%;
+     margin: 5px;
+     border-radius: 4px;
+
+ }
+
+.inputs input[type=date]{
+
+    padding: 8px;
+    background: #ffffff;
+    color: #374a68;
+    border: 1px solid #374a68;
+    width: 10%;
+    margin: 5px;
+    border-radius: 4px;
+
+}
+
+.inputs select:focus{
+    outline: none;
+}
+
+input:focus{
+    outline: none;
+}
+
+.search_container p{
+    color: #374a68;
+    font-family: CLB;
+}
+
+.search_container img:hover{
+    cursor: pointer;
+}
+
+@media(max-width: 940px) {
+    .title_search{
+        display: none;
+    }
+    .inputs{
+        width: 100%;
+        min-width: 100%;
+        text-align: center;
+    }
+    .search_container{
+        padding-left: 0px;
+    }
+}

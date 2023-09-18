@@ -1,0 +1,201 @@
+.bar_container{
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    justify-content: left;
+    overflow-y: auto;
+    text-align: left;
+    position: relative;
+    overflow: visible;
+}
+.bar_container .restaurant_bar{
+    background-color: #111f35;
+    width: 100%;
+    height: 50px;
+    max-height: 50px;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    display: inline-block;
+    padding-left: 235px;
+    padding-right: 160px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+.restaurant_bar .description{
+
+    height: 50px;
+    line-height: 50px;
+    align-items: center;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    width: 200px;
+}
+.restaurant_bar .description > img {
+    height: 30px;
+    margin: 5px;
+    display: inline-block;
+    float: left;
+    margin-top: 10px;
+}
+.restaurant_bar .description .title {
+    color: white;
+    margin-right: 25px;
+    font-family: CLB;
+    margin: 0px;
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 150px;
+}
+.restaurant_bar .description .bar_review {
+    color: #ffffff;
+    display: flex;
+    cursor: pointer;
+    background-color: #293953;
+    padding: 8px;
+    border-radius: 15px;
+}
+
+.restaurant_bar .description .bar_review  {
+    color: #ffffff;
+    display: flex;
+    cursor: pointer;
+    background-color: #293953;
+    padding: 8px;
+    border-radius: 15px;
+}
+.restaurant_bar .description .bar_review  img {
+    margin-right: 10px;
+    margin-top: 3px;
+}
+.restaurant_bar .description .bar_review  p {
+    margin: 0;
+    padding: 0;
+    transition: .5s;
+    font-family: CLB;
+}
+.restaurant_bar .categories{
+    display: inline-block;
+    right: 0;
+    width: 100%;
+
+
+}
+.restaurant_bar .categories i{
+    font-size: 40px;
+    color: #E0CD08;
+    display: none;
+    cursor: pointer;
+}
+.restaurant_bar .categories .arrow.left{
+    display: inline-block;
+    width: 50px;
+    position: absolute;
+    left: 210px;
+    top: 4px;
+    cursor: pointer;
+}
+
+.restaurant_bar .categories .arrow.right{
+    display: inline-block;
+    width: 50px;
+    position: absolute;
+    right: 110px;
+    top: 4px;
+    cursor: pointer;
+}
+.restaurant_bar .categories  .categories_name{
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    height: 50px;
+    line-height: 50px;
+    max-height: 50px;
+    white-space: nowrap;
+    padding-left: 35px;
+    padding-right: 35px;
+    box-sizing: border-box;
+    text-align: right;
+}
+.restaurant_bar .categories  .categories_name > p.activeCategorie{
+   background-color:#ffffff;
+    color: #111f35;
+    font-family: CLB;
+}
+.restaurant_bar .categories  .categories_name > p{
+
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-family: CLB;
+    display: inline-block;
+    white-space: nowrap;
+    height: 30px;
+    line-height: 30px;
+    padding-left: .5%;
+    padding-right: .5%;
+    margin: 0px;
+    margin-right: 10px;
+
+}
+.restaurant_bar  .categories_container{
+
+    cursor: pointer;
+    width: 140px;
+    margin: 0px;
+    position: absolute;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+    bottom: 5px;
+
+}
+.restaurant_bar .categories_container .category_button{
+background: #283754;
+border: none;
+color: #bcbcbc;
+height: 40px;
+margin: 10px;
+border-radius: 5px;
+display: flex;
+width: 120px;
+align-items: center;
+text-align: left;
+font-weight: bold;
+outline: none;
+cursor: pointer;
+}
+.restaurant_bar  .categories_container .category_button img{
+height: 30px;
+width: 30px;
+margin-right: 10px;
+}
+
+.restaurant_bar .categories_container .category_button img {
+margin-right: 10px;
+}
+.restaurant_bar .category_form{
+position: absolute;
+z-index: 10;
+width: 500px;
+right: 0px;
+top: 52px;
+border-radius: 7px;
+background-color: rgb(238, 238, 238);
+border: 1px solid rgb(17, 31, 53);
+font-size: 1.2em;
+display: none;
+}

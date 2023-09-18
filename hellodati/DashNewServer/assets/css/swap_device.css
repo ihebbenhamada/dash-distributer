@@ -1,0 +1,185 @@
+.input_swap_form{
+    display: inline-block;
+    width: 48%;
+    max-width: 48%;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 15px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    background-image: url(/assets/img/sidebar/inactiveList.svg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 8px;
+    background-origin: content-box;
+}
+.input_swap_form .select{
+    min-width: 100%;
+    padding: 10px;
+    max-width: 100%;
+    text-align: left;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border:1px solid rgb(215, 222, 234) ;
+    outline: none;
+}
+
+.input_swap_form label{
+    display: inline-block;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.info_swap{
+    max-width: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0);
+    text-align: left;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border: 1px solid rgb(185 185 185);
+    border-radius: 4px;
+    display: inline-block;box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.info_swap label{
+    font-size: 13px;
+
+}
+
+.buttons_swap{
+    display: inline-block;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+[DATI-ID=btn_first_step_swap_device]{
+    display:inline-block;
+    width: 45%;
+    background-color: rgb(103,127,168);
+    padding: 0.5%;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+.firststep_number_icon{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 10px;
+    line-height: 25px;
+    margin-top: 2.5px;
+    float: left;
+    color: rgb(103,127,168);
+    font-family: CLB;
+}
+[DATI-ID=btn_second_step_swap_device]{
+    display:inline-block;
+    width: 45%;
+    background-color: rgb(224,231,243);
+    padding: 0.5%;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.secondstep_number_icon{
+    width: 25px;
+    height: 25px;
+    background-color: rgb(103,127,168);
+    border-radius: 50%;
+    margin-left: 10px;
+    line-height: 25px;
+    float: left;
+    color: white;
+    font-family: CLB;
+}
+
+.firststep_text{
+    display: inline-block;
+    vertical-align: middle;
+    color: #ffffff;
+    font-size: 13px;
+    font-family: CLB;
+    line-height: 25px;
+}
+
+.secondstep_text{
+    display: inline-block;
+    vertical-align: middle;
+    color: rgb(103,127,168);
+    font-size: 13px;
+    font-family: CLB;
+    line-height: 25px;
+}
+
+.swap_btn_next{
+    display:inline-block;
+    width: 10%;
+    background-color: rgb(224,231,243);
+    padding: 0.5%;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    color: rgb(103,127,168);
+    font-size: 13px;
+    font-family: CLB;
+    height: 25px;
+    line-height: 25px;
+}
+
+.swap_btn_next.next_active{
+    background-color:  rgb(103,127,168);
+    color: #ffffff;
+}
+.swap_btn_next.next_active:hover{
+    background-color: rgb(81, 185, 96);
+    color: #ffffff;
+}
+
+
+.swap_btn_next_after_select{
+    display: inline-block;
+    height: 25px;
+    color: rgb(103,127,168);
+    line-height: 25px;
+    font-family: CLB;
+
+
+    width: 10%;
+    padding: 0.5%;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+    float: right;
+    background-color: rgb(103,127,168);
+}
+
+
+
+.info_swap_container{
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+}
+[form-id=form_Swap_Device]{
+    font-family: CL;
+    font-size: 16px;
+
+}

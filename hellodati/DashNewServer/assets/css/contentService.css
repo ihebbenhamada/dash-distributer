@@ -1,0 +1,16 @@
+.service_content .container_content{
+    display: flex;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    justify-content: left;
+    width: 100%;
+    margin: auto;
+    -moz-user-select: none; /* Firefox */
+    -webkit-user-select: none; /* Chrome, Safari, Opéra depuis la version 15 */
+    -ms-user-select: none; /* Internet explorer depuis la version 10 et Edge */
+    user-select: none; /* Propriété standard */
+}
+.service_content .container_content .restaurant_card_container{
+    display: contents;
+    text-align: left;
+}

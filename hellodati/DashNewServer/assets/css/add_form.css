@@ -1,0 +1,347 @@
+
+
+/*style add guest*/
+
+.add_form_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-family: CLB;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #e0e0e0;
+    box-sizing: border-box;
+}
+
+
+.input_add_form{
+    display: inline-block;
+    width: 30%;
+    max-width: 30%;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 15px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+}
+
+.input_add_form label{
+    display: inline-block;
+    max-width: 100%;
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.input_add_form_radio{
+    display: inline-block;
+    margin-top: 10px;
+    width: 100%;
+    text-align: left;
+
+}
+
+.input_add_form_radio input{
+    margin-left: 2.2%;
+}
+.input_add_form input[type=radio]{
+    float: left;
+    margin-right: 5px;
+}
+.input_add_form label{
+    font-size: 14px;
+}
+
+input[type="date" i] {
+    padding: 5.5px !important;
+}
+
+input[type="time" i] {
+    padding: 5.5px !important;
+}
+.input_add_form input[type=text], .input_add_form input[type=date],.input_add_form input[type=email],.input_add_form input[type=password],.input_add_form input[type=time]{
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+
+    margin-top: 5px;
+    text-align: left;
+    border-radius: 4px;
+    border:1px solid grey ;
+    padding: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    /*margin: 0;*/
+}
+
+.input_add_form select:focus{
+    outline: none;
+}
+.input_add_form input:focus{
+    outline: none;
+}
+
+.input_add_form .select{
+
+    min-width: 100%;
+    padding: 7.2px;
+    max-width: 100%;
+    margin-top: 5px;
+    text-align: left;
+    border-radius: 4px;
+    border:1px solid grey ;
+    outline: none;
+
+}
+
+.form_add{
+    width: 100%;
+    margin: auto;
+    font-family: CLB;
+
+}
+.header_add_form{
+    width: 100%;
+    background-color: #00a8e0;
+    height: 50px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    box-sizing: border-box;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+
+}
+
+.header_add_form img{
+    width: 40px;
+
+}
+
+.buttons{
+    width: 100%;
+
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    font-size: 15px;
+    text-align: center;
+    line-height: 75px;
+}
+
+.buttons input{
+
+    width: 200px;
+    max-width: 40%;
+    padding: 10px;
+    margin-left: 20px;
+    border: none;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.buttons input:hover{
+    cursor: pointer;
+}
+.buttons input:focus{
+    outline: none;
+}
+.div_btn_add{
+
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:10px
+}
+
+.btn_valid{
+    display: inline-block;
+    background-color: #111f35;
+    color: #ffffff;
+    font-size: 18.5px;
+    font-family: CLB;
+    padding: 5px;
+    padding-right: 40px;
+    padding-left: 40px;
+    text-align: center;
+    background-image: url("/assets/img/check.svg");
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    border: 0px solid;
+    border-radius: 5px;
+    width: 30%;
+    max-width: 30%;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 25px;
+
+}
+
+.btn_valid:hover{
+    display: inline-block;
+    background: #337cc0;
+    background-image: url("/assets/img/check_blue.svg");
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    border: 0px solid;
+    border-radius: 5px;
+    width: 30%;
+    max-width: 30%;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 25px;
+    font-size: 18.5px;
+    font-family: CLB;
+    padding: 5px;
+    padding-right: 40px;
+    padding-left: 40px;
+    text-align: center;
+
+}
+.add_input{
+    position: relative;
+}
+.select_with_add{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+.select_with_add .select{
+    margin: 0px;
+}
+.object_add{
+    position: absolute;
+    width: 33px;
+    height: 100%;
+    bottom: 0px;
+    right: 0px;
+    background: #0a1526;
+    font-size: 12px;
+    border-radius: 0px 4px 4px 0px;
+    text-align: center;
+    line-height: 34px;
+    cursor: pointer;
+    color: #E0CD08;
+
+}
+.object_add:hover{
+
+    background: #0a1526;
+    color: #fafafa;
+
+}
+
+.file{
+    width: 95%;
+    padding: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 5px;
+    text-align: left;
+    border-radius: 4px;
+    border: 1px solid grey;
+    outline: none;
+    background: white;
+}
+
+.popup_success_div{
+    display:none;
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(0,0,0,0.5);
+    z-index:9999;
+
+}
+.popup_success_container{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px;
+    transform: translate3d(0px, 0px, 0px);
+    transition: transform 500ms cubic-bezier(0, 0, 0.25, 1) 0s, opacity 500ms cubic-bezier(0, 0, 0.25, 1) 0s;
+    z-index: 10002; width: 400px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.validate_modal{
+    flex-direction: column;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.validate_modal img {
+    padding: 5px;
+    cursor: pointer;
+}
+.validate_modal div {
+    padding: 5px;
+    color: #219431;
+    border-bottom: 3px solid #219431;
+}
+
+.echec_modal{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.echec_modal img {
+    padding: 5px;
+    cursor: pointer;
+}
+.echec_modal div {
+    padding: 5px;
+    color: #e76646;
+    border-bottom: 3px solid #e76646;
+}
+
+.uploderProfileImage{
+
+}
+
+@media(max-width: 1200px) {
+
+
+    .buttons input{
+        width: 140px;
+    }
+    .input_add_form, .select{
+
+        padding-left: 0px;
+        -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+        -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+    .input_add_form_radio{
+        display: inline-block;
+        margin-top: 10px;
+        width: 55%;
+        text-align: left;
+    }
+
+
+
+
+}

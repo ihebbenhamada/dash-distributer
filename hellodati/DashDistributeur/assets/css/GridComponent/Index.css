@@ -1,0 +1,69 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    margin: 0px;
+    font-family: CL;
+
+}
+
+.grid_container{
+    display: grid;
+    display: -moz-grid;
+    display: -ms-grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: minmax(200px, 15vw) 85vw;
+    grid-template-rows: minmax(10vh, 10vh) 90vh;
+    grid-template-areas:
+             "nav header"
+             "nav main"
+
+
+}
+
+[dati-page=Dashboard]{
+    -moz-user-select: none; /* Firefox */
+    -webkit-user-select: none; /* Chrome, Safari, Opéra depuis la version 15 */
+    -ms-user-select: none; /* Internet explorer depuis la version 10 et Edge */
+    user-select: none; /* Propriété standard */
+}
+
+@font-face {
+    font-family: 'CL';
+    src: url('/assets/fonts/ChampagneLimousines.ttf');
+}
+
+@font-face {
+    font-family: 'CLB';
+    src: url('/assets/fonts/ChampagneLimousinesBold.ttf');
+}
+
+@font-face {
+    font-family: 'CLBI';
+    src: url('/assets/fonts/ChampagneLimousinesBoldItalic.ttf');
+}
+
+@font-face {
+    font-family: 'CLI';
+    src: url('/assets/fonts/ChampagneLimousinesItalic.ttf');
+}
+
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #C0C0C0;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--header-color);
+    border: 0px solid var(--header-color);
+}
+
+
+
+

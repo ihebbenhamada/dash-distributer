@@ -1,0 +1,80 @@
+.pupup_up_add_chain{
+    width: 100%;
+    text-align: left;
+    position: absolute;
+    margin-top: 5px;
+}
+
+.title_popup_chain {
+    background-color: #111f35;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.form_body_popup_chain {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.form_body_popup_chain > p {
+    font-size: 0.8em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: black;
+    margin-right: 20px;
+    font-family: CLB;
+}
+
+
+
+.form_body_popup_chain > input {
+    width: 90%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    border: 1px solid #bfbfbf;
+}
+
+.form_body_popup_chain span {
+    background-color: #1a5889;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: white;
+    margin-right: 10px;
+    box-sizing: border-box;
+    font-size: 1.3em;
+    font-weight: 100;
+    margin-left: 3px;
+    margin-top: 1px;
+}
+
+.form_body_popup_chain .btn_add_chain {
+    background-color: #3f86be;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 0;
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.form_body_popup_chain .btn_add_chain  p {
+    color: white;
+    font-weight: 10;
+    margin: 0;
+    padding: 0;
+    transition: .5s;
+    font-family: CLB;
+}

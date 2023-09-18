@@ -1,0 +1,78 @@
+.component{
+    width: 150px;
+}
+.pagination_container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pagination_container select{
+    border: none;
+    -webkit-appearance: none;
+}
+
+
+.pagination_container select:focus{
+    outline: none;
+}
+
+[dati-composent=pagination] select{
+    font-size: 14px;
+    border: none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    color:#374a68;
+    background-image: url(/assets/img/inactiveList.svg);
+    background-size: auto 5px;
+    background-repeat: no-repeat;
+    background-position: -14px center;
+    padding-left:14px
+
+}
+
+
+[dati-composent=pagination] select:focus{
+    outline: none;
+}
+[dati-composent=pagination]{
+    text-align:right;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+[dati-composent=pagination] select::selection {
+    color: none;
+    background: none;
+}
+/* For Mozilla Firefox */
+[dati-composent=pagination] select::-moz-selection {
+    color: none;
+    background: none;
+}
+[dati-composent=arrows_pagination]{
+    width:40px;display:inline-block;margin-left: 10px
+}
+
+
+[dati-composent=arrow_pagination_prev], [dati-composent=arrow_pagination_next]{
+    color:#374a68;
+    cursor:pointer;
+    padding:4px
+}
+
+[dati-composent=arrow_pagination_prev]:hover, [dati-composent=arrow_pagination_next]:hover{
+    color:#E0CD08;
+    cursor:pointer;
+}
+[dati-composent=arrow_pagination_prev].inactive, [dati-composent=arrow_pagination_next].inactive{
+    color:#c0c0c0;
+    padding:4px;
+    opacity:0.4;
+    cursor:not-allowed;
+}
+[dati-composent=arrow_pagination_prev].inactive:hover, [dati-composent=arrow_pagination_next].inactive:hover{
+    color:#c0c0c0;
+    padding:4px;
+    cursor:not-allowed;
+}

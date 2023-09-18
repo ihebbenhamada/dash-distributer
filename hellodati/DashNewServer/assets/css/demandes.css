@@ -1,0 +1,32 @@
+
+.demandeContainer{
+    width: 100%;
+    margin: auto;
+}
+
+.btn_action_done{
+    height: 30px;
+    width: 80%;
+    background-color: #7f8ba0;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    padding-top: 6px;
+    cursor: not-allowed;
+    border: none;
+}
+
+
+.btn_action_accept{
+    height: 30px;
+    width: 80%;
+    background-color: #3b8703;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    padding-top: 6px;
+    cursor: pointer;
+    border: none;
+}

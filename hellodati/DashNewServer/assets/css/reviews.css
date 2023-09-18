@@ -1,0 +1,217 @@
+.modal_review{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    line-height: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.review_container{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 100%;
+    position: absolute;
+    text-align: left;
+    background: white;
+    z-index: 9;
+    padding: 10px;
+    /* padding-left: 25px; */
+    border-radius: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.review_container .detail_container{
+    display: inline-block;
+    /* justify-content: space-between; */
+    width: 100%;
+    height: 30%;
+    position: relative;
+}
+.review_container .title{
+    font-family: CLB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    background-color:#fafafa;
+    color: #9f9f9f;
+    font-size: 1.2em;
+    height: 5%;
+}
+.review_container .title p{
+    margin:0px;
+}
+.review_container .detail_container .close_button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    position: absolute;
+    right: -3%;
+    top: -3%;
+    color: #9f9f9f;
+    font-size: 40px;
+}
+.review_container .detail_container .close_button:hover{
+    color: #111f35;
+}
+.review_container .detail_container .image{
+    width: 48%;
+    float: left;
+    height: 100%;
+}
+.review_container .detail_container .image img{
+    height: 90%;
+    width: 100%;
+}
+.review_container .detail_container .description{
+    width: 48%;
+    height: 100%;
+    position: relative;
+    font-family: CLB;
+    float: left;
+    margin-left: 2%;
+}
+.container_pourcent{
+    position: absolute;
+    right: 20%;
+    bottom: 10px;
+}
+
+
+.review_container .detail_container .description .description_block{
+    font-family: CLB;
+    height: 35%;
+    margin-top: 0px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-bottom: 1%
+}
+.review_container .reviews{
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 20px;
+overflow-y: auto;
+height: 45%;
+font-family: CLB;
+
+}
+.review_container .review{
+
+    margin-bottom: 10px;
+    }
+.review_container .reviews .review .rate{
+    font-family: CLB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 2px;
+    cursor: pointer;
+    color: #9f9f9f;
+    }
+.review_container .reviews .review .rate .guest_info{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+}
+.review_container .reviews .review .rate .guest_info img{
+    height: 40px;
+    width: 40px;
+}
+.review_container .reviews .review .rate .guest_info .name{
+    width: 40%;
+}
+.review_container .reviews .review .rate .guest_info .date{
+    width: 40%;
+}
+.review_container .reviews .review .rate .rating{
+    display: flex;
+    color: #ffde66;
+    width: 20%
+}
+.review_container .reviews .review p{ 
+    font-family: CLB;
+}
+.review_container .reviews .review .comment{ 
+    background: #fafafa;
+    color: #9f9f9f;
+    width: 90%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    padding-left: 20px;
+     display: none;
+}
+
+.review_container .container_static{
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 15px;
+    border-bottom: 1px solid grey;
+    font-family: CLB;
+    text-align: center;
+}
+.review_container .container_static .element_static{
+    display: inline-block;
+    width: 20%;
+    background: #fafafa;
+    margin: 2%;
+    border-radius: 5px;
+    padding: 1%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px #9f9f9f;
+}
+
+.review_container .container_static .element_static .logo{
+    display: inline-block;
+    float: left;
+    padding-top: 4px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.review_container .container_static .element_static .static{
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+    float: right;
+}
+.review_container .container_static .element_static .static .taux{
+    font-size: 30px;;
+    margin: 0px;
+}
+.review_container .container_static .element_static .static .title_clic{
+    color: #9f9f9f;
+    margin: 0px;
+    font-size: 12px;;
+}
+
+#overlay{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+}
+

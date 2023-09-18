@@ -1,0 +1,71 @@
+.details_container{
+    display: flex;
+    width: 700px;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 130px;
+    left: 25%;
+    display: none;
+    z-index: 9;
+}
+
+.details_container .image{
+    width: 50%;
+    padding: 10px;
+}
+.details_container .image img{
+    width: 309px;
+    height: 309px;
+    border-radius: 5px;
+}
+.details_container .detail{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.details_container .detail .title{
+    font-family: CLB;
+    color: #468dc5;
+    font-size: 1.5em;
+}
+.details_container .detail .description{
+    font-family: CLB;
+}
+.details_container .detail .prix{
+    font-family: CLB;
+    width: 100px;
+    height: 25px;
+    font-family: CLB;
+    font-size: 35.5px;
+    text-align: right;
+    color: #d54751;
+}
+.details_container .detail .close_bt{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.popup_detail_order_reservation{
+    display: inline-block;
+    line-height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px;
+    z-index: 7;
+    min-width: 70%;
+    height: min-content;
+    max-height: 70%;
+    margin: 0px;
+    margin-left: 10vw;
+    padding: 1%;
+
+
+}

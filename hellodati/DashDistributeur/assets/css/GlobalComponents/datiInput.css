@@ -1,0 +1,29 @@
+.dati-input-container{
+    border: 1px solid #ffff;
+    display: flex;
+    justify-items: center;
+    height: 30px;
+    padding-left: 1%;
+    margin: 2%;
+    width: 96%;
+    box-sizing: border-box;
+    float: left;
+    display: table;
+
+}
+.dati-input-container div{
+    color: var(--header-color);
+    height: 30px;
+    line-height: 30px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 40px;
+    display: table-cell;
+}
+.dati-input-container input{
+    border: none;
+    background-color: rgba(0,0,0,0);
+    width: 100%;
+    box-sizing: border-box;
+
+}

@@ -1,0 +1,3 @@
+.employeeContainer .dataTableStyle th:last-child{
+    min-width: inherit
+}

@@ -1,0 +1,67 @@
+.openingAndTimes .Suppression_modal{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px;
+    z-index: 10002;
+    width: 400px;
+    position: absolute;
+    top: 170px;
+    left: 40%;
+    display: none;
+}
+.openingAndTimes .Suppression_modal .body_modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.openingAndTimes .Suppression_modal .body_modal .bt_actions {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.openingAndTimes .Suppression_modal .body_modal .bt_actions .validate{
+    width: 100px;
+    height: 35px;
+    border-radius: 50px;
+    background-color: #1a740e;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    color: white;
+    padding-right: 50px;
+    padding-left: 5px;
+}
+.openingAndTimes .Suppression_modal .body_modal .bt_actions .validate:hover{
+
+    background-color: #219431;
+
+}
+.openingAndTimes .Suppression_modal .body_modal .bt_actions .validate img{
+    height: 26px;
+}
+.openingAndTimes .Suppression_modal .body_modal .bt_actions .cancel{
+    width: 100px;
+    height: 35px;
+    border-radius: 50px;
+    background-color: #b51e00;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    color: white;
+    padding-right: 50px;
+    padding-left: 5px;
+}
+.openingAndTimes .Suppression_modal .body_modal .bt_actions .cancel:hover{
+    background-color: #ef5749;
+}
+.openingAndTimes .Suppression_modal .body_modal .bt_actions .cancel img{
+    height: 26px;
+}

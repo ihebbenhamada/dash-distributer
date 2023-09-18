@@ -1,0 +1,17 @@
+.component{
+    width: 150px;
+}
+.pagination_container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pagination_container select{
+    border: none;
+    -webkit-appearance: none;
+}
+
+
+.pagination_container select:focus{
+    outline: none;
+}

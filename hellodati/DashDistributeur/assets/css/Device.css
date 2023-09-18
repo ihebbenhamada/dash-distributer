@@ -1,0 +1,54 @@
+.btn_validate{
+    width: 100%;
+    height: 40px;
+    background-color: var(--header-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: CLB;
+    cursor: pointer
+}
+
+.method_add_device{
+    width: 50%;
+    height: 100%;
+    background-color: var(--header-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: CLB;
+    cursor: pointer;
+    border: 1px solid #ffffff;
+    color: #ffffff
+}
+.imei_serial_textArea{
+    height: 500px;
+    width: 48%;
+    background-color: var(--main-color);
+    border: 1px solid #ffffff;
+    padding: 10px;
+    resize: none;
+    box-sizing: border-box;
+}
+
+.textArea_header{
+    width: 100%;
+    border-top: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    border-left:1px solid #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    font-size: 14px;display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.textArea_header>div:hover {
+    color: var(--header-color);
+    font-weight: bold;
+}
+
+

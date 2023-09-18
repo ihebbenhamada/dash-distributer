@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'CL';
+    src: url('../fonts/ChampagneLimousines.ttf');
+}
+
+@font-face {
+    font-family: 'CLB';
+    src: url('../fonts/ChampagneLimousinesBold.ttf');
+}
+
+@font-face {
+    font-family: 'CLBI';
+    src: url('../fonts/ChampagneLimousinesBoldItalic.ttf');
+}
+
+@font-face {
+    font-family: 'CLI';
+    src: url('../fonts/ChampagneLimousinesItalic.ttf');
+}
+.fa-sign-out-alt{
+    color: #E0CD08;
+}
+.fa-unlock-alt{
+    color: #E0CD08;
+}
+
+.fa-recycle{
+    color: #E0CD08;
+}
+input::placeholder{
+    color: #C0C0C0;
+}
+
+::placeholder {
+    color: white;
+}
+

@@ -1,0 +1,290 @@
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #C0C0C0;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #111F35;
+    border: 0px solid #E0CD08;
+}
+
+nav::-webkit-scrollbar-thumb {
+    background-color: #E0CD08;
+    border: 0px solid #555555;
+}
+
+main{
+    grid-area: main;
+    padding: 30px;
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.main_container{
+    width: 100%;
+    margin: auto;
+}
+
+.home_container{
+    display: grid;
+    display: -moz-grid;
+    display: -ms-grid;
+    grid-template-rows:4.5fr 5fr 10fr;
+    grid-template-areas:
+        "mobile "
+        "order "
+        "tops ";
+    grid-row-gap: 10px;
+
+}
+.mobile_container{
+    grid-area:mobile ;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.mobile{
+    display: flex;
+    justify-content: space-around;
+    display: -webkit-flex;
+    width: 32%;
+    border-radius: 7px;
+    background-color: #111F35;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    text-align: center;
+    align-items: center;
+}
+.mobile > div{
+    margin: 0;
+    font-size: 1.5em;
+    box-sizing: content-box;
+    height: 100px;
+}
+.mobile > div img {
+    height: 100px;
+
+}
+.mobile > div .number {
+    font-size: 2.1em;
+    margin: 0;
+    color: white;
+    font-weight: bolder;
+} 
+.mobile > div .text {
+    margin: 0;
+    padding: 0;
+    color: #E0CD08;
+    font-family: CLB;
+} 
+.order_container{
+    grid-area:order ;
+    display: flex;
+    justify-content: space-between;
+    display: -webkit-flex;
+}
+.order{
+    background-color: #1D2F4C;
+    display: flex;
+    justify-content: space-around;
+    display: -webkit-flex;
+    width: 49%;
+    border-radius: 7px;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+.order .order_detail {
+    margin: 0;
+    font-size: 1.2em;
+    width: 20%;
+    box-sizing: content-box;
+    border-right: 1px solid black;
+    padding-right: 10px;
+    position: absolute;
+    left: 0px;
+}
+.order .order_chart {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+}
+.order .order_chart .pourcentage {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    font-size: 2em;
+    top: 43%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: CLB;
+}
+@media screen and (max-width:1400px) {
+    .order .order_chart .pourcentage {
+
+        font-size: 1.3em;
+
+    }
+
+}
+.order .order_chart .stat_waiting {
+    display: block;
+    position: absolute;
+    left: 15%;
+    width: 47%;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.order .order_chart .stat_delivred {
+    display: block;
+    position: absolute;
+    left: 45%;
+    width: 47%;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.order .order_chart .stat_rejected {
+    display: block;
+    position: absolute;
+    left: 75%;
+    width: 47%;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.order > div .number{
+    font-size: 2.5em;
+    margin: 0;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+}
+.order > div .text{
+    margin: 0;
+    text-align: center;
+    padding: 0;
+    color: #E0CD08;
+    font-family: CLB;
+
+}
+ .order #waitingChart{
+    display: block;
+     width: 80%;
+}
+.order #delivredChart{
+    display: block;
+    width: 80%;
+}
+.order #rejectedChart{
+    display: block;
+    width: 80%;
+} 
+.order #waitingChartReservation{
+    display: block;
+    width: 80%;
+}
+.order #delivredChartReservation{
+    display: block;
+    width: 80%;
+}
+.order #rejectedChartReservation{
+    display: block;
+    width: 80%;
+}
+
+.tops_container{
+    grid-area:tops ;
+    margin-top: 20px;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    font-size: 1.1em;
+}
+.tops_orders{
+    width: 49%;
+    overflow-y: auto;
+    height: 350px;
+}
+.tops_orders table{
+    width: 100%;
+}
+.tops_orders table th{
+    border-radius: 5px;
+    background-color: #4E8142;
+    color: white;
+    padding: 17px;
+    position: relative;
+    height: 100%;
+}
+
+.tops_orders table    tr:nth-child(even) {
+    background-color: #E3E3E3;
+  }
+  .tops_orders table  td {
+    color: black;
+    padding: 17px;
+    position: relative;
+    height: 100%;
+    font-family: CLB;
+  }
+.top_reservations{
+    width: 49%;
+    overflow-y: auto;
+    height: 350px;
+}
+.top_reservations table{
+    width: 100%;
+}
+.top_reservations table th{
+    border-radius: 5px;
+    background-color: #4277AA;
+    color: white;
+    padding: 17px;
+    position: relative;
+    height: 100%;
+}
+
+.top_reservations table    tr:nth-child(even) {
+    background-color: #E3E3E3;
+  }
+  .top_reservations table  td {
+    color: black;
+    padding: 17px;
+    position: relative;
+    height: 100%;
+    font-family: CLB;
+  }
+.container_charts_oreder_reservation{
+    display: flex;
+    justify-content: space-between;
+}
+.container_chart{
+    box-shadow: 0 2px 8px #9f9f9f;
+    border-radius: 5px;
+    width: 49%;
+}
+.container_chart > canvas{
+    width: 100%;
+    height: 300px;
+}

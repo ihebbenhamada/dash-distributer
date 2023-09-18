@@ -1,0 +1,100 @@
+.employeeContainer{
+    width: 100%;
+    margin: auto;
+}
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0.1;}
+    100% {opacity: 1;}
+}
+@keyframes fadeIn {
+    0% {opacity: 0.1;}
+    100% {opacity: 1;}
+}
+
+
+table tr{
+    text-align: left;
+    font-family: CLB;
+}
+
+[DATA-ROLE=RADIO] [DATA-ROLE] .check{
+    color: #2bb929;
+    display: none;
+}
+[DATA-ROLE=RADIO] [DATA-ROLE] .close{
+
+    color: #A5A1AA;
+    opacity: 0.1;
+    display: none;
+
+}
+[DATA-ROLE=RADIO] [DATA-ROLE=RADIO-ITEM] .close{
+    display: inline-block;
+    cursor: pointer;
+}
+
+[DATA-ROLE=RADIO] [DATA-ROLE=RADIO-ITEM-CHECKED] .check{
+    display: inline-block;
+    font-size: 12px;
+}
+
+[DATA-ROLE=RADIO] [DATA-ROLE=RADIO-ITEM]:hover{
+    cursor: pointer;
+}
+
+[DATA-ROLE=RADIO] [DATA-ROLE=RADIO-ITEM]:hover .close{
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.dataTableStyle.privilegeEmp{
+    width: 96%;
+    margin: 2%;
+    padding: 0;
+
+}
+.dataTableStyle.privilegeEmp, .dataTableStyle.privilegeEmp td, .dataTableStyle.privilegeEmp th{
+    border: 0px solid;
+    background-color: #fff;
+
+}
+.dataTableStyle.privilegeEmp, .dataTableStyle.privilegeEmp td{
+    padding: 15px;
+}
+
+.dataTableStyle.privilegeEmp .tableHeader th{
+    background-color: #ffffff;
+    color: #111f35;
+    border-bottom: 1px solid #C0C0C0;
+    text-align: center;
+}
+
+.EmpTableContainer{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #C0C0C0;
+    margin-top: 5%;
+    border-radius: 5px;
+}
+
+.tableName{
+    height: 40px;
+    line-height: 40px;
+}
+.tableName div{
+    display: flex;
+}
+.tableName img{
+    display: inline-block;
+    height:30px;
+    margin-top: 10px;
+    margin-right: 15px
+}
+.tableName span{
+    display: inline-block;
+
+}

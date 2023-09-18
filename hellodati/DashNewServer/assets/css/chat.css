@@ -1,0 +1,452 @@
+body{
+    margin: 0px;
+}
+.chat_container{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.chat_container .msgReceive{
+    position: absolute;
+    background-color: rgb(36, 71, 141);
+    height: 100%;
+    width: 25%;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    z-index: 2;
+    -moz-user-select: none; /* Firefox */
+    -webkit-user-select: none; /* Chrome, Safari, Opéra depuis la version 15 */
+    -ms-user-select: none; /* Internet explorer depuis la version 10 et Edge */
+    user-select: none; /* Propriété standard */
+}
+.chat_container .msgReceive .msg_in_box{
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding:0px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.chat_container .msgReceive .msg_in_box > div{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 20px;
+}
+.chat_container .msgReceive .msg_in_box > div .msg_container{
+    height: 100px;
+    width: 90%;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+.chat_container .msgReceive .msg_in_box > div .msg_container:first-child {
+    background-color: rgb(23, 55, 119);
+}
+.chat_container .msgReceive .msg_in_box > div .msg_container:hover{
+    cursor: pointer;
+    background-color:rgb(23, 55, 119);
+}
+
+.chat_container .msgReceive .msg_in_box > div .msg_container .profile{
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    /* background-color: yellow; */
+    top: 0px;
+    left: 0px;
+    line-height: 100%;
+    text-align: center;
+    background-image: url('/assets/img/chat/contact.png');
+    background-repeat: no-repeat;
+    background-size: 55px auto;
+    background-position: center center;
+}
+.chat_container .msgReceive .msg_in_box > div .msg_container .the_msg{
+    display: inline-block;
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    top:0px;
+    left: 20%;
+
+}
+.chat_container .msgReceive .msg_in_box > div .msg_container .the_msg > div{
+    display: inline-block;
+    width: 100%;
+    height: 70px;
+    line-height: 10px;
+    margin-top: 29px;
+    text-align: left;
+}
+.chat_container .msgReceive .msg_in_box > div .msg_container .the_msg .msg{
+    color: rgb(135,155,199);
+    font-size: 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    padding: 1px;
+}
+.chat_container .msgReceive .msg_in_box > div .msg_container .the_msg .guest_name{
+    color: white;
+    font-size: 16px;
+    display: flex;
+
+}
+.chat_container .msgReceive .msg_in_box > div .msg_container .the_msg .guest_name .name{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 60%;
+    padding: 1px;
+
+}
+.chat_container .msgReceive .msg_in_box > div .msg_container .the_msg .guest_name .room_number{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 40%;
+    padding: 1px;
+
+}
+.chat_container .msgReceive .msg_in_box > div .msg_container .time{
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    line-height: 100%;
+    top: 0px;
+    right: 0px;
+    text-align: center;
+
+}
+.chat_container .msgReceive .msg_in_box > div .msg_container .time > div {
+    height: 40%;
+    margin-top: 40%;
+
+}
+.chat_container .msgReceive .msg_in_box > div .msg_container .time > div .image_seen{
+
+    background-repeat: no-repeat;
+    background-size: 18px auto;
+    background-position: center center;
+    width: 100%;
+    height: 26px;
+}
+.chat_container .msgReceive .msg_in_box > div .msg_container .time > div .image_active{
+
+    background-repeat: no-repeat;
+    background-size: 35px auto;
+    background-position: center center;
+    width: 100%;
+    height: 26px;
+}
+.chat_container .msgReceive .msg_in_box > div .msg_container .time > div p{
+    margin: 0px;
+    color: rgb(135,155,199);
+}
+.chat_container .msgReceive .chat_container_search{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(36, 71, 141);;
+
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    border-top-left-radius: 5px;
+}
+.chat_container .msgReceive .chat_container_search input{
+    width: 80%;
+    background-color: rgb(36, 71, 141);
+    border: 0px solid rgb(135,155,199);
+    border-bottom: 0.5px solid rgb(135,155,199);
+    color: rgb(135,155,199);
+    padding-bottom: 4px;
+    outline: none;
+}
+.chat_container .msgReceive .chat_container_search input::placeholder{
+    color: rgb(135,155,199);
+}
+.chat_container .msgReceive .department_agent{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(23, 55, 119);
+    display: inline-block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 3;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+}
+.chat_container .msgReceive .department_agent .services{
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+    margin-top: 10px;
+}
+.chat_container .msgReceive .department_agent .services .departement{
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    white-space: normal;
+    cursor: pointer;
+}
+.chat_container .msgReceive .department_agent .services .departement span {
+    display: inline-block;
+    margin: 0px;
+    font-size: 12px;
+    margin-top: 5px;
+    color: white;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+
+}
+.chat_container .body_messenger{
+    position: absolute;
+    background-color: rgb(231, 237, 242);
+    height: 100%;
+    width: 75%;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    z-index: 2;
+    left: 25%;
+
+}
+
+.chat_container .body_messenger > div{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+.chat_container .body_messenger > div img{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    -moz-user-select: none; /* Firefox */
+    -webkit-user-select: none; /* Chrome, Safari, Opéra depuis la version 15 */
+    -ms-user-select: none; /* Internet explorer depuis la version 10 et Edge */
+    user-select: none; /* Propriété standard */
+}
+.chat_container .body_messenger > div .msg_show_box{
+    height: 100%;
+    width: 75%;
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 1.2%;
+    padding-bottom: 110px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+.chat_container .body_messenger > div .msg_show_box .message_send_receive{
+
+    height: 100%;
+    width: 100%;
+    padding-top: 40px;
+    margin-bottom: 150px;
+    box-sizing: border-box;
+    overflow: auto;
+    overflow-x: hidden;
+
+}
+.chat_container .body_messenger > div .msg_show_box .message_send_receive .receive{
+    width: 100%;
+    display: inline-block;
+    float: left;
+    margin-bottom: 15px;
+}
+.chat_container .body_messenger > div .msg_show_box .message_send_receive .receive .image_sender{
+    width: 10%;
+    text-align: right;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: 40px auto;
+    background-position: center center;
+    float: right;
+    padding-right: 2%;
+    display: inline-block;
+}
+
+.chat_container .body_messenger > div .msg_show_box .message_send_receive .receive .detail_msg{
+    width: 70%;
+    text-align: right;
+    float: right;
+    display: inline-block;
+}
+.chat_container .body_messenger > div .msg_show_box .message_send_receive .receive .detail_msg .msg_time{
+    margin-bottom: 4px;
+}
+.chat_container .body_messenger > div .msg_show_box .message_send_receive .receive .detail_msg  .msg_time span{
+    color: rgb(114,156,175);
+
+}
+.chat_container .body_messenger > div .msg_show_box .message_send_receive .receive .detail_msg .receive_msg{
+
+    max-width: 70%;
+    color: white;
+    float: right;
+    text-align: left;
+    background-color: rgb(23, 55, 119);
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    word-break: break-all;
+
+    display: inline-block;
+}
+.chat_container .body_messenger > div .msg_show_box .message_send_receive .send{
+    display: inline-block;
+    width: 100%;
+    padding-left: 2%;
+    margin-bottom: 15px;
+    text-align: left;
+}
+.chat_container .body_messenger > div .msg_show_box .message_send_receive .send .msg_time{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 4px;
+}
+.chat_container .body_messenger > div .msg_show_box .message_send_receive .send .msg_time span{
+    width: 100%;
+    color: rgb(114,156,175);
+}
+.chat_container .body_messenger > div .msg_show_box .message_send_receive .send .send_msg{
+    color: black;
+    background-color: white;
+    position: relative;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    display: inline-block;
+    max-width: 70%;
+    text-align: left;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    word-break: break-all;
+    display: inline-block;
+
+}
+.chat_container .body_messenger > div .msg_show_box .message_send_receive .send .send_msg img {
+    position: absolute;
+    right: 10px;
+    top: 40%;
+}
+.chat_container .body_messenger > div .send_box{
+    height: 100px;
+    width: 75%;
+    background-color: white;
+    position: absolute;
+    display: inline-block;
+    bottom: 10px;
+    left: 1.2%;
+    border-radius: 5px;
+    -moz-user-select: none; /* Firefox */
+    -webkit-user-select: none; /* Chrome, Safari, Opéra depuis la version 15 */
+    -ms-user-select: none; /* Internet explorer depuis la version 10 et Edge */
+    user-select: none; /* Propriété standard */
+}
+.chat_container .body_messenger > div .send_box .sender{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.chat_container .body_messenger > div .send_box  .sender .sender_input{
+    background-color: rgb(231, 237, 242);
+    height: 40px;
+    width: 80%;
+    border-radius: 50px;
+    position: absolute;
+    top: 30px;
+    margin-left: 15px;
+    line-height: 40px;
+}
+.chat_container .body_messenger > div .send_box  .sender .sender_input input{
+    margin-left: 7%;
+    border: none;
+    background: none;
+    width: 90%;
+    outline: none;
+}
+.chat_container .body_messenger > div .send_box .sender > img {
+    position: absolute;
+    top: 35px;
+    left: 90%;
+    cursor: pointer;
+}
+
+.chat_container .body_messenger > div .detail_guest{
+    height: 300px;
+    width: 22%;
+    background-color: white;
+    position: absolute;
+    display: inline-block;
+    top: 50px;
+    right: 1%;
+    border-radius: 5px;
+    -moz-user-select: none; /* Firefox */
+    -webkit-user-select: none; /* Chrome, Safari, Opéra depuis la version 15 */
+    -ms-user-select: none; /* Internet explorer depuis la version 10 et Edge */
+    user-select: none; /* Propriété standard */
+}
+.chat_container .body_messenger > div .detail_guest .container_guest{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: inline-block;
+}
+.chat_container .body_messenger > div .detail_guest .container_guest img {
+    position: inherit;
+    top: unset;
+    right: unset;
+    display: inline-block;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.chat_container .body_messenger > div .detail_guest .container_guest .guest_info {
+    width: 100%;
+}
+.chat_container .body_messenger > div .detail_guest .container_guest .guest_info h6 {
+    color: rgb(114,156,175);
+}
+.chat_container .body_messenger > div .detail_guest .container_guest .guest_info h6 span{
+    color: rgb(80,111,135);
+}

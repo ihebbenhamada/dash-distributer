@@ -1,0 +1,170 @@
+.container_emp_dati{
+
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+
+}
+.header_employee{
+
+    height: 50px;
+    border-radius: 5px;
+    display: inline-block;
+    width: 100%;
+}
+.header_employee >div:first-child{
+    background-color:#111f35;
+    color: #ffffff ;
+
+}
+.header_employee  .section_header{
+    width: 33.333%;
+    height: 100%;
+    float: left;
+    background-color: #ffffff;
+    color:#111f35;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.header_employee  .section_header{
+    width: 33.333%;
+    height: 100%;
+    float: left;
+    background-color: #ffffff;
+    color:#111f35;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    position: relative;
+}
+.header_employee  .section_header i{
+    left: 10px;
+    position: absolute;
+}
+
+.emp_info_container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px;
+    align-items: center;
+
+}
+
+.emp_info_container .emp_info{
+width: 320px;
+min-width: 300px;
+display: flex;
+background-color: #ffff;
+flex-direction: column;
+border-radius: 5px;
+margin-top: 2%;
+ margin-bottom: 2%;
+cursor: pointer;
+}
+/*.emp_info_container .emp_info:hover {
+
+transform: scale(1.05);
+}*/
+.emp_info_container .emp_info .Header_user{
+height: 40%;
+width: 100%;
+box-shadow: 0 1px 2px -1px rgba(224,224,224,1);
+}
+.emp_info_container .emp_info .Header_user .image_user{
+height: 75%;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+background-position: center center;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+
+.emp_info_container .emp_info .Header_user .image_user > img{
+background-color: #fff;
+width: 5rem;
+height: 5rem;
+border-radius: 50%;
+
+
+}
+
+
+.emp_info_container .emp_info .Header_user .user_actions{
+height: 25%;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+}
+.emp_info_container .emp_info .Header_user .user_actions .user_actions_button{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.emp_info_container .emp_info .Header_user .user_actions .user_actions_button  i{
+    cursor: pointer;
+    padding: 5px;
+    color: #111f35;
+}
+.emp_info_container .emp_info .Header_user .user_actions .user_actions_button  i:hover{
+    color: #E0CD08;
+}
+
+.emp_info_container .emp_info .Header_user .user_actions  .opener{
+position: absolute;
+right: 5px;
+width: 30px;
+height: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+transition: background-color 100ms ease-in-out;
+
+}
+.emp_info_container .emp_info .Header_user .user_actions   .opener:hover {
+background-color: #E0CD08;
+}
+
+
+.emp_info_container .emp_info .body_user{
+    padding: 5%;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.emp_info_container .emp_info .body_user .title{
+color: #111f35;
+font-weight: bold;
+text-align: center;
+height: 10%;
+}
+.emp_info_container .emp_info .body_user .info{
+    height: 40px;
+    line-height: 40px;
+    padding-left: 5px;
+    border-radius: 4px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.43);
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.43);
+    -moz-box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.43);
+
+}
+.emp_info_container .emp_info .body_user .info > label {
+font-weight: bold;
+font-size: 14px;
+
+}
+.emp_info_container .emp_info .body_user .info > span {;
+font-size: 15px;
+
+}
+

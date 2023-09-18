@@ -1,0 +1,107 @@
+.restaurant_card{
+    display: inline-flex;
+    display: -webkit-inline-flex;
+    box-shadow: 0px 0px 27px -8px #a3a3a3;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    border-radius: 5px;
+    width: 31%;
+    height: 170px;
+    margin-right: 20px;
+    overflow: hidden;
+    text-align: left;
+    cursor: pointer;
+}
+
+.restaurant_card .description_container{
+    width: 42%;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+.restaurant_card .description{
+    display: -webkit-box;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: CLB;
+    margin: 0px;
+    font-size: 13px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.restaurant_card .description_container .title{
+
+  color: #1a5889;
+  text-decoration: none ;
+  cursor: pointer;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-family: CLB;
+  margin: 0px;
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+.restaurant_card .description_container .title:first-letter {
+    text-transform: uppercase;
+}
+.restaurant_card .description_container> img{
+  height: 45px;
+  display: flex;
+  align-self: flex-start;
+}
+
+.restaurant_card .image {
+    overflow: hidden;
+    width: 58%;
+    display: flex;
+    border-radius: 0 5px 5px 0;
+    display: -webkit-flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-size: cover;
+    padding: 20px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: relative;
+}
+.restaurant_card .restaurant_actions {
+  display: flex;
+    z-index: 2;
+    position: absolute;
+    bottom: 5px;
+}
+.restaurant_card .restaurant_actions img{
+  margin-right: 10px;
+  cursor: pointer;
+
+}
+@media screen and (max-width:1700px) {
+    .add_button_restau{
+        width: 31%;
+    }
+    .restaurant_card{
+      width: 31%;
+    }
+
+
+  }
+  
+  @media screen and (max-width:1200px) {
+      .add_button_restau{
+          width: 80%;
+          margin-left: 8%;
+      }
+    .restaurant_card{
+      width: 80%;
+        margin-left: 8%;
+
+    }
+  
+
+  }

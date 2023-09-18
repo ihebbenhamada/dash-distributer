@@ -1,0 +1,187 @@
+@font-face {
+    font-family: 'CL';
+    src: url('../fonts/ChampagneLimousines.ttf');
+}
+
+@font-face {
+    font-family: 'CLB';
+    src: url('../fonts/ChampagneLimousinesBold.ttf');
+}
+
+@font-face {
+    font-family: 'CLBI';
+    src: url('../fonts/ChampagneLimousinesBoldItalic.ttf');
+}
+
+@font-face {
+    font-family: 'CLI';
+    src: url('../fonts/ChampagneLimousinesItalic.ttf');
+}
+
+.Order_reservation_container{
+
+    border: #9f9f9f 1px solid ;
+    padding: 20px;
+}
+
+.header_order_reservation{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.search input{
+    width: 20%;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 50px;
+    border: 1px solid #374a68;
+}
+
+.search input:focus{
+    outline: none;
+}
+
+.search select{
+    width: 20%;
+    border-radius: 50px;
+    border: 1px solid #374a68;
+    color: black;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: white;
+}
+
+.search select:focus{
+    outline: none;
+}
+
+
+.date{
+
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.date label{
+    display: inline-block;
+    min-width: 30px;
+    text-align: right;
+    padding-right: 5px;
+}
+.date input{
+    padding: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 50px;
+    border: 1px solid #374a68;
+}
+
+.date input:focus{
+    outline: none;
+}
+
+.dataTableStyle th:last-child{
+    min-width: 120px;
+}
+
+.line{
+    width:100%;
+    height: 10px;
+    background-color: #dfdfdf;
+    text-align: left;
+    font-size: 10px
+}
+.animated-progress {
+    width: 100%;
+    height: 10px;
+    border: 1px solid #e9e9e9;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+    background-color: #e9e9e9;
+}
+
+.animated-progress span {
+    height: 100%;
+    display: block;
+    width: 0;
+    color: rgb(255, 251, 251);
+    line-height: 10px;
+    position: absolute;
+    text-align: end;
+    font-size: 10px;
+}
+
+.progress-blue span {
+    background-color: blue;
+}
+.progress-green span {
+    background-color: #4bb81d;
+}
+.progress-orange span {
+    background-color: #111F35;
+}
+.progress-red span {
+    background-color: #d86060;
+}
+
+/*
+.dataTableStyle tr{
+    border: 10px solid #e9e9e9;
+    background-color: white;
+    border-radius: 10px;
+    color: #9f9f9f;
+}
+.dataTableStyle tr:nth-child(odd){background-color: #e9e9e9;}
+
+
+.dataTableStyle tr:first-child{
+    background: #374a68;
+}
+.dataTableStyle td{
+    padding: 15px;
+}
+.dataTableStyle th{
+    padding: 15px;
+    color: #ffffff;
+    font-size: 15px;
+}
+!*table {
+    width: 100%;
+    border-collapse: collapse;
+}*!
+
+table{
+    border-collapse: separate;
+    width: 100%;
+    border-spacing: 0px 0px;
+}
+
+table tr{
+    text-align: center;
+    font-family: CLB;
+}
+
+table img:hover{
+    cursor: pointer;
+}
+
+tr td:first-child {
+    border-radius: 4px 0px 0px 4px;
+}
+tr td:last-child {
+    border-radius: 0px 4px 4px 0px;
+}*/

@@ -1,0 +1,122 @@
+.hotelContainer{
+    display: inline-block;
+    padding-bottom: 50px;
+    width: 100%;
+    min-height: 100%;
+}
+.hotelContainer .container-information{
+    display: inline-block;
+/*    background-color: red;*/
+    width: 46%;
+    float: left;
+    margin: 2%;
+    text-align: left;
+}
+.hotelContainer .container-information iframe{
+margin: 2%;
+}
+
+
+.hotelContainer .container-information .container-information-image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+
+}
+.hotelContainer .container-information .title{
+    font-family: 'CLB';
+    color: var(--header-color);
+    margin: 2%;
+}
+
+
+
+.hotelContainer .container-configuration{
+    display: inline-block;
+/*    background-color: red;*/
+    width: 46%;
+    float: left;
+    margin: 2%;
+    text-align: left;
+/*    padding-bottom: 2%;*/
+}
+.hotelContainer .container-configuration .title{
+    font-family: 'CLB';
+    color: var(--header-color);
+    margin: 2%;
+}
+.hotelContainer .container-configuration .title-hidden{
+    font-family: 'CLB';
+    color: var(--main-color);
+    margin: 2%;
+}
+.hotelContainer .hotel-action-add{
+    display: flex;
+    width: 96%;
+    height: 30px;
+    margin: 2%;
+    justify-content: flex-end;
+    line-height: 30px;
+}
+.hotelContainer .hotel-action-add div {
+    width: 25%;
+    color: #fff;
+    cursor: pointer;
+    font-family: CLB;
+    height: 100%;
+    margin-left: 2%;
+    background: var(--header-color);
+    text-align: center;
+}
+
+.map-search-container{
+    display: flex;
+    justify-items: center;
+    height: 30px;
+    margin: 2%;
+    width: 96%;
+    box-sizing: border-box;
+
+}
+.map-search-container .map-search-input-container{
+    width: 65%;
+    height: 100%;
+    box-sizing: border-box;
+
+}
+.map-search-container .map-search-input-container .map-search-coordinates-container{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #fff;
+    display: inline-block;
+}
+.map-search-container .map-search-input-container .map-search-coordinates-container input{
+    width: 33%;
+    float: left;
+}
+.map-search-container .map-search-input-container input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0px;
+    box-sizing: border-box;
+    padding-left: 1%;
+
+}
+.map-search-container .map-search-select-container{
+    width: 35%;
+    height: 100%;
+
+}
+.map-search-container .map-search-select-container select{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    color: #24478D;
+    cursor: pointer;
+    box-sizing: border-box;
+
+}

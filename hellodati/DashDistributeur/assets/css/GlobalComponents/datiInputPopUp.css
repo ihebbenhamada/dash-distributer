@@ -1,0 +1,22 @@
+
+ .dati-input-with-popup{
+    border: 1px solid #ffff;
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    height: 30px;
+    padding-left: 1%;
+    margin: 2%;
+    width: 96%;
+    box-sizing: border-box;
+    float: left;
+    align-items: center;
+    color: var(--header-color);
+
+
+}
+ .dati-input-with-popup i {
+    color: var(--header-color);
+    cursor: pointer;
+    margin-right: 2%;
+}

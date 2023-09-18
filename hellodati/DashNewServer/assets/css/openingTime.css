@@ -1,0 +1,207 @@
+
+/* no openingtime  */
+ .openingAndTimes .has_no_openingTime {
+    padding-left: 3%;
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+    background-color: #eeeeee;
+    border-radius: 4px;
+    position: relative;
+}
+.openingAndTimes .has_contact {
+    padding-left: 3%;
+    display: none;
+    margin-top: 3%;
+    background-color: #eeeeee;
+    border-radius: 4px;
+    position: relative;
+    flex-direction: column;
+    padding-bottom: 2%;
+
+}
+.openingAndTimes .has_contact .reseaux_sociaux{
+    height: 40px;
+    background-color: #7b96c4;
+    color: #FFFFFF;
+    border-radius: 5px;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 1%;
+    box-sizing: border-box;
+    width: auto;
+    padding-right: 3%;
+    padding-left: 3%;
+    position: relative;
+}
+.openingAndTimes .has_contact .reseaux_sociaux .close{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #b51e00;
+    color: #FFFFFF;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    text-align: center;
+}
+.openingAndTimes .has_contact .reseaux_sociaux span {
+    white-space:nowrap;
+}
+.openingAndTimes .has_contact >div{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.openingAndTimes .has_no_openingTime >div{
+    display: flex;
+    width: 200px;
+    align-items: center;
+}
+.openingAndTimes .has_no_openingTime p{
+    color: #f58635;
+    margin-left: 12px;
+    margin-right: 40px;
+}
+/* end no openingtime  */
+
+
+/* opining time  */
+.openingAndTimes  .opening_time{
+    padding-left: 3%;
+    padding-right: 3%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+    padding-top: 2%;
+    flex-direction: column;
+    background-color: #eeeeee;
+}
+.openingAndTimes .opening_time .title{
+    color: #1a3e64;
+    text-align: left;
+
+}
+.openingAndTimes .opening_time .shifts {
+    display: flex;
+    justify-content: space-between;
+}
+.openingAndTimes .opening_time .shifts .open_close {
+    display: flex;
+    width: 48%;
+    justify-content: space-between;
+    background: white;
+    border-radius: 5px;
+}
+.openingAndTimes .opening_time .shifts .open_close .title_s{
+    display: flex;
+    width: 100%;
+    border-left: 3px solid #19b846;
+    border-radius: 5px;
+}
+.openingAndTimes .opening_time .shifts .open_close .title_sc{
+    display: flex;
+    width: 100%;
+    border-left: 3px solid #c90606
+;
+    border-radius: 5px;
+}
+.openingAndTimes .opening_time .shifts .open_close .title_s p{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.openingAndTimes .opening_time .shifts .open_close .title_s input{
+    border: none;
+    width: 100%;
+}
+.openingAndTimes .opening_time .shifts .open_close .img_s{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.openingAndTimes .opening_time .shifts .open_close .title_sc p{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.openingAndTimes .opening_time .shifts .open_close .title_sc input{
+    border: none;
+    width: 100%;
+}
+.openingAndTimes .opening_time .shifts .open_close  .img_s{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.openingAndTimes .opening_time .days{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.openingAndTimes .opening_time .days .day{
+    display: flex;
+    align-items: center;
+    width: 10%;
+    justify-content: space-evenly;
+    color: #989898;
+}
+.openingAndTimes .opening_time .bt-addS .button_shifts{
+    height: 40px;
+    width: 150px;
+    background-color: #1a3e64;
+    border-radius: 5px;
+    margin-right: 1%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.openingAndTimes .opening_time .bt-addS .button_shifts img{
+    width: 23px;
+    height: 23px;
+    margin-left: 8%;
+    margin-right: 4%;
+}
+.openingAndTimes .opening_time .bt-addS .button_shifts p{
+    color: #ffff;
+    margin-left: 2%;
+}
+.openingAndTimes .opening_time .times{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.openingAndTimes .opening_time .times table{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    font-family: CLB;
+    font-size: 12px;
+}
+.openingAndTimes .opening_time .times table td{
+    text-align: left;
+    padding: 8px;
+}
+.openingAndTimes .opening_time .times table td:first-child{
+    color: #1a3e64;
+}
+.openingAndTimes .opening_time .times table td .actions{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.openingAndTimes .opening_time .times table td .actions img{
+    width: 16px;
+    height: 16px;
+    margin: 5px;
+
+
+
+}
+.openingAndTimes .opening_time .times table tr:nth-child(odd){
+    background-color:#ffffff;
+}

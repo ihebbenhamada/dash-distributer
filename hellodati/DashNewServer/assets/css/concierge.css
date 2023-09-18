@@ -1,0 +1,60 @@
+.concierge_card_container{
+    display: contents;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.concierge_card_container .container_concierge_item{
+    width: 24%;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-flex;
+    display: -webkit-inline-flex;
+    align-items: flex-start;
+    background-size: 100% 100%;
+    flex-flow: column;
+    justify-content: flex-end;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    -webkit-box-shadow: 2px -2px 11px -2px rgba(0,0,0,0.76);
+    -moz-box-shadow: 2px -2px 11px -2px rgba(0,0,0,0.76);
+    box-shadow: 2px -2px 11px -2px rgba(0,0,0,0.76);
+}
+@media screen and (max-width: 1700px){
+    .concierge_card_container .container_concierge_item {
+        width: 32%;
+    }
+}
+@media screen and (max-width: 1200px){
+    .concierge_card_container .container_concierge_item {
+        width: 48%;
+    }
+}
+@media screen and (max-width: 1000px){
+    .concierge_card_container .container_concierge_item {
+        width: 80%;
+    }
+}
+.concierge_card_container .container_concierge_item > span{
+    color: #E0CD08;
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    font-family: 'CLB';
+}
+.concierge_card_container .container_concierge_item .action{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+
+}

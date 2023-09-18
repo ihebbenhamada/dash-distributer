@@ -1,0 +1,29 @@
+.openingAndTimes .echec_modal{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px;
+    z-index: 10002;
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 170px;
+    left: 40%;
+    display: none;
+}
+.openingAndTimes .echec_modal .body_modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 80px;
+}
+
+.openingAndTimes .echec_modal .body_modal img{
+    padding: 5px;
+}
+
+.openingAndTimes .echec_modal .body_modal div{
+    padding: 5px;
+    color: #e76646;
+    border-bottom: 3px solid #e76646
+}

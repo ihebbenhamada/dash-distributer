@@ -1,0 +1,55 @@
+<div class="demandeContainer" DATI-PAGE="history">
+    <div class="header_container">
+        <div class="search_container"
+             DATI-ID="searchBarEmpHistoryList"
+             DATI-COMPOSENT="searchBarDatatable"
+             DATI-FOR="dataTable"
+             DATI-ACTION="searchEmpHistory"
+             DATI-TITLE-SEARCH="FIND BY"
+             DATI-UPDATE="HistoryEmpListPageReady"
+             style="width: 100%">
+            <div DATI-COMPOSENT="input"  DATI-ID="listhystoryEmps_filter_by" DATI-OPTION="historyList_ui.filterBy" DATI-INPUT-TYPE="select"></div>
+            <div DATI-COMPOSENT="input" DATI-ID="empHistoryList_search_byname" DATI-INPUT-TYPE="text" placeholder="Employee Name" ></div>
+            <div DATI-COMPOSENT="input" DATI-OPTION="historyList_ui.optionsAction"  DATI-ID="empHistoryList_search_byAction" DATI-INPUT-TYPE="select" style="display: none"></div>
+
+            <dati-datepicker DATI-ID="HistoryEmpDateTimePicker"
+                             DATI-UPDATE="GetDateTimePickerHistoryEmp"
+                             ENABLE="0"
+                             SHOW="0"
+                             SELECTED-DATE="historyList_ui.selectedDate"
+                             DATI-INPUT-TYPE="datiDatePicker"
+                             DEFAULT-VALUE="onemonth"
+                             DATI_CHANGE="iHistory.GET_HISTORY()"
+                             style="float: right;">
+            </dati-datepicker>
+
+        </div>
+    </div>
+
+
+    <table class="dataTableStyle"
+           DATI-COMPOSENT="dataTable"
+           DATI-LIST="historyList_ui.empHistory"
+           DATI-ID="EmphistoryList"
+           DATI-UPDATE="AllEmpHistoryReceive"
+           DATI-TD-STYLE="text-align:center">
+
+
+        <tr DATI-COMPOSENT="datatable_header">
+            <th DATI-ATTR="inserted_at" align="center" DATI-FN="historyList_ui.getDate">DATE</th>
+            <th DATI-ATTR="Employe.name" align="center" >EMPLOYEE NAME</th>
+            <th DATI-ATTR="action" align="center" DATI-FN="historyList_ui.getAction">ACTION</th>
+            <th DATI-ATTR="details.description" align="center" DATI-FN="historyList_ui.getActionDetail">ACTION DETAIL</th>
+            <th DATI-ATTR="id" DATI-FN="historyList_ui.GET_HTML_TD" style="display: none"></th>
+            <th COLSPAN="1"
+                DATI-COMPOSENT="pagination"
+                DATI-ID="pagination_empHistoryList"
+                DATI-NBR-ROW=""
+                DATI-UPDATE="AllEmpHistoryReceive"
+                DATI-TOTAL-PAGE="historyList_ui.total"
+                DATI-FOR="empHistoryList"
+                DATI-FN="iHistory.GET_ALL_EMP_HISTORY()">
+            </th>
+        </tr>
+    </table>
+</div>

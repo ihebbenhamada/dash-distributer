@@ -1,0 +1,37 @@
+.dati-select-container{
+    border: 1px solid #ffff;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    height: 30px;
+    padding-left: 1%;
+    margin: 2%;
+    width: 96%;
+    box-sizing: border-box;
+    float: left;
+
+}
+.dati-select-container label{
+    color: var(--header-color);
+    height: 30px;
+    line-height:30px ;
+    margin-right: 1%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.dati-select-container select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url(/assets/img/ui/inactiveList.svg);
+    background-size: auto 5px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    margin-right: 2%;
+    border: none;
+    outline: none;
+    background-color:var(--main-color);
+    width: 50%;
+    color: var(--header-color);
+    cursor: pointer;
+}
