@@ -1,0 +1,144 @@
+.emp_add_container{
+    grid-area: main;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+.emp_add_container .form_add{
+    width: 70%;
+    margin: 5%;
+}
+.emp_add_container .form_add .container_employee{
+    display: inline-block;
+    width: 100%;
+
+}
+.emp_add_container .form_add .container_employee .info_personnel {
+    border-radius: 5px;
+    position: relative;
+    margin: 5%;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.emp_add_container .form_add .container_employee .info_personnel_two {
+    width: 40%;
+    float: left;
+}
+.emp_add_container .form_add .container_employee .image-container{
+
+}
+.emp_add_container .form_add .container_employee .image-container span{
+    display: inline-block;
+    background-image: url(https://apitndati.com/assets/HOTEL39/j2NEUTskkcHhtCDJp6bHiaJRBBPbjnoKp7Su4n0yL5xzFfMVBDAjdD48u39LAEtD3681IFCPO4PuRwfeLUwZ5C4cx0shHUK0EIm7);
+    height: 8vw;
+    width: 8vw;
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    position: absolute;
+    top: -4vw;
+    left: -4vw;
+    cursor: pointer;
+}
+.emp_add_container .form_add legend {
+    color: #fff;
+    font-weight: bold;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.emp_add_container .form_add .header_form_add_emp{
+    height: 10%;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.emp_add_container .form_add .header_form_add_emp .Photo_employee{
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    background-color: #fff;
+    background-image: url(https://apitndati.com/assets/HOTEL39/j2NEUTskkcHhtCDJp6bHiaJRBBPbjnoKp7Su4n0yL5xzFfMVBDAjdD48u39LAEtD3681IFCPO4PuRwfeLUwZ5C4cx0shHUK0EIm7);
+    border-radius: 50%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.emp_add_container .form_add .header_form_add_emp .Photo_employee i {
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    font-size: 20px;
+    color: #1a3e64;
+}
+.emp_add_container .form_add .header_form_add_emp .title_header{
+    color: #111f35;
+    font-size: 17px;
+    font-weight: bold;
+}
+.emp_add_container .form_add .body_form_add_emp{
+    display: inline-block;
+    width: 100%;
+}
+
+.emp_add_container .form_add .body_form_add_emp > div {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    margin: 1%;
+    float: left;
+}
+.emp_add_container .form_add .body_form_add_emp  > div > label {
+    color: white;
+    margin: 5px;
+}
+.emp_add_container .form_add .body_form_add_emp  > div > input {
+    border-radius: 5px;
+    border: 1px solid #d2d2d2;
+    margin: 5px;
+    height: 45px;
+    outline: none;
+    padding-left: 2%;
+}
+.emp_add_container .form_add  .section_button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+
+}
+.emp_add_container .form_add .section_button > button{
+    width: 250px;
+    height: 35px;
+    object-fit: contain;
+    border-radius: 4px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    color: #111f35;
+    font-weight: bold;
+    outline:none;
+    position: relative;
+}
+.emp_add_container .form_add  .section_button > button img {
+    height: 20px;
+    position: absolute;
+    left: 5px;
+}
+.emp_add_container .form_add  .section_button > button i {
+    position: absolute;
+    left: 5px;
+}

@@ -1,0 +1,78 @@
+.container-information{
+
+}
+.container-information .submit{
+    width: 96%;
+    height: 40px;
+    background-color: var(--header-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: CLB;
+    cursor: pointer;
+    margin: 2%;
+}
+.container-belling-information{
+    display: flex;
+    width: 100%;
+    background:var(--nav-color);
+}
+.container-belling-information > div{
+    width: 30%;
+    padding: 1%;
+}
+.container-belling-information > div .title-detail{
+    color:var(--header-color);
+}
+.container-belling-information > div .details{
+    color: var(--grey-color);
+}
+.container-belling-information > div .link{
+    color: var(--blue-color);
+    cursor: pointer;
+}
+.hotel-remarque-container{
+    display: inline-block;
+    width: 96%;
+    box-sizing: border-box;
+    margin: 2%;
+}
+.hotel-remarque-container .name{
+    width: 100%;
+    background-color: white;
+    color: var(--header-color);
+    font-family: 'CLB';
+    height: 20px;
+    line-height: 20px;
+}
+.hotel-remarque-container .name > div {
+    margin: 2%;
+}
+.hotel-remarque-container .remarque{
+    width: 100%;
+    height: 200px;
+}
+.hotel-remarque-container .remarque textarea{
+    width: 100%;
+    padding: 1%;
+    box-sizing: border-box;
+    border: none;
+    height: 100%;
+    background-color: var(--beige-color);
+}
+.hotel-remarque-container .bt-save{
+    width: 100%;
+    background-color: white;
+    color: #24478D;
+    font-family: 'CLB';
+    display: inline-block;
+    background-color: var(--beige-color);
+}
+.hotel-remarque-container .bt-save > div{
+    display: inline-block;
+    float: right;
+    margin: 2%;
+    cursor: pointer;
+}

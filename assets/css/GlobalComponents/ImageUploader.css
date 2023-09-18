@@ -1,0 +1,22 @@
+.imageUploader{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 200px;
+    border: 1px dashed var(--header-color);
+    color:var(--header-color) ;
+    margin: 2%;
+    cursor: pointer;
+
+}
+.imageUploader input{
+    position: fixed;
+    top: 9999px;
+}
+.imageUploader p{
+    color:var(--header-color) ;
+    font-family: CLB;
+    margin-left: 2%;
+}

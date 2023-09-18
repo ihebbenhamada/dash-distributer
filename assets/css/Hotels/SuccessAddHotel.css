@@ -1,0 +1,53 @@
+.Success-hotel-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.Success-hotel-container .container-success-add-hotel{
+    background-color: var(--nav-color);
+    width: 98%;
+    display: inline-block;
+    height: 400px;
+    border-radius: 5px;
+}
+.Success-hotel-container .container-success-add-hotel .container-success-add-hotel-main{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 3%;
+}
+.Success-hotel-container .container-success-add-hotel .container-success-add-hotel-main .title{
+    color: var(--grey-color);
+    display: inline-block;
+    text-align: left;
+    height: 40px;
+    line-height: 40px;
+    font-family: 'CLB';
+}
+.Success-hotel-container .link{
+    color: var(--header-color);
+    display: inline-block;
+    text-align: left;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+}
+.Success-hotel-container .container-success-add-hotel .container-success-add-hotel-main .container-info-login-hotel{
+    display: flex;
+    width: 100%;
+}
+.Success-hotel-container .container-success-add-hotel .container-success-add-hotel-main .container-info-login-hotel{
+    display: flex;
+    width: 100%;
+}
+.Success-hotel-container .container-success-add-hotel .container-success-add-hotel-main .email-link{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'CLB';
+    color: var(--header-color);
+    cursor: pointer;
+}

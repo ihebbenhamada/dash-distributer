@@ -1,0 +1,376 @@
+.container_emp_dati{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10vh 90vh;
+    grid-template-areas:
+            "header"
+            "main";
+}
+.header_emp_page{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0);
+    border-bottom: 2px solid #E0CD08;
+    background-image: url(/assets/img/dati_tran2.png);
+    grid-area: header;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.container_emp_dati .Dati_emp_dash{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container_emp_dati .Dati_emp_dash .image_container{
+    width: 70px;
+}
+.container_emp_dati .Dati_emp_dash .image_container > img {
+    height: 6vh;
+    width: 6vh;
+    border-radius: 50%;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.3);
+}
+.container_emp_dati .Dati_emp_dash .info_container{
+    color: #E3E3E3;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container_emp_dati .Dati_emp_dash .info_container > span {
+    display: inline-block;
+    width: 100%;
+}
+.container_emp_dati .header_emp_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:100%;
+    width: 65%;
+}
+.container_emp_dati .header_emp_container .log-out{
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.container_emp_dati .header_emp_container .log-out i{
+    transform: rotate(180deg);
+    color: #E0CD08;
+}
+.container_emp_dati .header_emp_container .log-out:hover{
+    background-color: #ffffff;
+}
+.container_emp_dati .header_emp_container .log-out:hover i{
+    transform: rotate(180deg);
+    color:red;
+}
+.container_emp_dati .header_emp_container .home_back{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 15%;
+    margin-left: 50px;
+}
+.container_emp_dati .header_emp_container .home_back > button {
+    color: inherit;
+    font: inherit;
+    font-weight: bold;
+    background-color: #ffffff;
+    color: #111f35;
+    width: 75%;
+    height: 40px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+    transition: background-color 100ms ease-in-out, transform 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    cursor: pointer;
+}
+.container_emp_dati .header_emp_container .home_back > button i {
+    cursor: pointer;
+    color:  #111f35;
+    margin: 5px;
+    height: 18px;
+    margin-right: 20%;
+}
+.container_emp_dati .header_emp_container .home_back > button:hover {
+    background-color:  #ffffff;
+    transform: scale(1.1);
+}
+.container_emp_dati .header_emp_container .home_back button:active {
+    background-color: #ffffff;
+    transform: scale(1);
+}
+
+
+.container_emp_dati .header_emp_container .historys_emp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 15%;
+
+}
+
+.container_emp_dati .header_emp_container .historys_emp >button {
+    color: inherit;
+    font: inherit;
+    font-weight: bold;
+    background-color: #ffffff;
+    color: #111f35;
+    width: 75%;
+    height: 40px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+    transition: background-color 100ms ease-in-out, transform 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    cursor: pointer;
+}
+.container_emp_dati .header_emp_container .historys_emp >button img {
+    cursor: pointer;
+    color:  #ffffff;
+    margin: 5px;
+    height: 18px;
+    margin-right: 20%;
+}
+.container_emp_dati .header_emp_container .historys_emp > button:hover {
+    background-color:  #ffffff;
+    transform: scale(1.1);
+}
+.container_emp_dati .header_emp_container .historys_emp button:active {
+    background-color: #ffffff;
+    transform: scale(1);
+}
+
+.container_emp_dati .header_emp_container .add_emp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 15%;
+
+}
+
+.container_emp_dati .header_emp_container .add_emp > button {
+    color: inherit;
+    font: inherit;
+    font-weight: bold;
+    background-color:#ffffff;
+    color: #111f35;
+    width: 75%;
+    height: 40px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+    transition: background-color 100ms ease-in-out, transform 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    cursor: pointer;
+}
+.container_emp_dati .header_emp_container .add_emp > button img{
+    cursor: pointer;
+    color: #ffffff;
+    margin: 5px;
+    height: 18px;
+    margin-right: 20%;
+}
+.container_emp_dati .header_emp_container .add_emp > button:hover {
+    background-color: #ffffff;
+    transform: scale(1.1);
+}
+.container_emp_dati .header_emp_container .add_emp button:active {
+    background-color:#ffffff;
+    transform: scale(1);
+}
+
+.container_emp_dati .header_emp_container .search_emp{
+    width: 55%;
+    display: flex;
+
+}
+.container_emp_dati .header_emp_container .search_emp > select {
+    height: 40px;
+    width: 30%;
+    border: none;
+    outline: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #ffffff;
+    border-right:1px solid #E0CD08;
+    padding-left: 1%;
+    cursor: pointer;
+}
+.container_emp_dati .header_emp_container .search_emp .search_input {
+    width: 70%;
+    position: relative;
+}
+.container_emp_dati .header_emp_container .search_emp .search_input > input {
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-left: 1%;
+}
+.container_emp_dati .header_emp_container .search_emp .search_input .image_search_emp {
+    position: absolute;
+    top: 0;
+    right: -1px;
+    height: 40px;
+    width: 40px;
+    background: #ffffff;
+    border-left: 1px solid #E0CD08;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.container_emp_dati .header_emp_container .search_emp .search_input .image_search_emp > i {
+    color:#111f35;
+    font-weight: 900;
+}
+.emp_info_container{
+    grid-area: main;
+    overflow-y: auto;
+    padding: 2%;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-gap: 100px;
+    justify-content: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+
+}
+
+.emp_info_container .emp_info{
+width: 100%;
+min-width: 200px;
+display: flex;
+background-color: #ffff;
+flex-direction: column;
+border-radius: 5px;
+margin: 2%;
+cursor: pointer;
+}
+.emp_info_container .emp_info:hover {
+
+transform: scale(1.1);
+}
+.emp_info_container .emp_info .Header_user{
+height: 40%;
+width: 100%;
+box-shadow: 0 1px 2px -1px rgba(224,224,224,1);
+}
+.emp_info_container .emp_info .Header_user .image_user{
+height: 75%;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+background-position: center center;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+
+.emp_info_container .emp_info .Header_user .image_user > img{
+background-color: #fff;
+width: 5rem;
+height: 5rem;
+border-radius: 50%;
+
+
+}
+
+
+.emp_info_container .emp_info .Header_user .user_actions{
+height: 25%;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+}
+.emp_info_container .emp_info .Header_user .user_actions .user_actions_button{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.emp_info_container .emp_info .Header_user .user_actions .user_actions_button  i:hover{
+    color: #E0CD08;
+}
+
+.emp_info_container .emp_info .Header_user .user_actions  .opener{
+position: absolute;
+right: 5px;
+width: 30px;
+height: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+transition: background-color 100ms ease-in-out;
+
+}
+.emp_info_container .emp_info .Header_user .user_actions   .opener:hover {
+background-color: #E0CD08;
+}
+
+
+.emp_info_container .emp_info .body_user{
+    padding: 5%;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.emp_info_container .emp_info .body_user .title{
+color: #111f35;
+font-weight: bold;
+text-align: center;
+height: 10%;
+}
+.emp_info_container .emp_info .body_user .info{
+    height: 40px;
+    line-height: 40px;
+    padding-left: 5px;
+    border-radius: 4px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.43);
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.43);
+    -moz-box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.43);
+
+}
+.emp_info_container .emp_info .body_user .info > label {
+font-weight: bold;
+font-size: 14px;
+
+}
+.emp_info_container .emp_info .body_user .info > span {;
+font-size: 15px;
+
+}
+

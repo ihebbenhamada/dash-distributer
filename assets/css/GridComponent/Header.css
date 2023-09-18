@@ -1,0 +1,123 @@
+header{
+    grid-area: header;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    -moz-user-select: none; /* Firefox */
+    -webkit-user-select: none; /* Chrome, Safari, Opéra depuis la version 15 */
+    -ms-user-select: none; /* Internet explorer depuis la version 10 et Edge */
+    user-select: none; /* Propriété standard */
+    background-color: var(--header-color);
+
+
+
+}
+/*NAVIGATION SECTION*/
+header .navigation-header{
+    width: 48%;
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+header .navigation-header .pathname {
+    display: inline-block;
+    color: var(--nav-color);
+    font-family: CLB;
+    width: 80%;
+}
+header .navigation-header .navigation{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100px;
+    height: 100%;
+}
+header .navigation-header .navigation .back{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    background-image: url(/assets/img/Header/goBackInactive.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-size: 25px;
+    display: inline-block;
+    float: left;
+}
+header .navigation-header .navigation .back:hover{
+    background-image: url(/assets/img/Header/goBack.png);
+}
+header .navigation-header .navigation .prev{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    background-image: url(/assets/img/Header/nextPageInactive.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-size: 25px;
+    display: inline-block;
+    float: left;
+}
+header .navigation-header .navigation .prev:hover{
+    background-image: url(/assets/img/Header/nextPage.png);
+}
+
+/*USER DETAILS SECTION*/
+header .details-user-header{
+    width: 48%;
+    height: 100%;
+    float: right;
+    display: flex;
+    align-items: center;
+    padding-right: 55px;
+    box-sizing: border-box;
+}
+
+header .details-user-header .dati_user_authen{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+header .details-user-header .dati_user_authen .image_container_hotel{
+    width: 70px;
+}
+header .details-user-header .dati_user_authen .image_container_hotel > img {
+    height: 6vh;
+    width: 6vh;
+    border-radius: 50%;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.3);
+}
+header .details-user-header .dati_user_authen .info_container_hotel{
+    color: #E3E3E3;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+header .details-user-header .dati_user_authen .info_container_hotel > span {
+    display: inline-block;
+    width: 100%;
+}
+
+header .details-user-header .log-out{
+    width: 50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+}
+header .details-user-header  .log-out i{
+    transform: rotate(180deg);
+    color: #E0CD08;
+}
+header .details-user-header .log-out:hover{
+    background-color: #ffffff;
+}
+header .details-user-header .log-out:hover i{
+    transform: rotate(180deg);
+    color:red;
+}

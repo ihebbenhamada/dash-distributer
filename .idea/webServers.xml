@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="165cd857-08e9-4e0d-a15e-8c216f25cc8b" name="Distributeur" url="http://business.datihotel.com">
+        <fileTransfer host="business.datihotel.com" port="22" rootFolder="/var/www/dashboard" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

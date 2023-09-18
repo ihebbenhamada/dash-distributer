@@ -1,0 +1,74 @@
+.container_mark_dati{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.container_mark_dati .detail-container-mark{
+    display: inline-block;
+    float: left;
+    width: 50%;
+    text-align: center;
+    box-sizing: border-box;
+}
+.container_mark_dati .detail-container-mark .submit{
+    width: 100%;
+    height: 40px;
+    background-color: var(--header-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: CLB;
+    cursor: pointer;
+    margin: 2%;
+}
+.container_mark_dati .image-container-mark{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    float: right;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+}
+.container_mark_dati .image-container-mark > textarea{
+    background-color: #E7EDF2;
+    width: 70%;
+    border: 1px solid #FFFFFF;
+    height: 150px;
+    padding-left: 1%;
+    box-sizing: border-box;
+}
+.container_mark_dati .image-container-mark > textarea::-webkit-input-placeholder { /* Edge */
+    color:var(--header-color);
+}
+
+.container_mark_dati .image-container-mark > textarea:-ms-input-placeholder { /* Internet Explorer */
+    color:var(--header-color);
+}
+
+.container_mark_dati .image-container-mark > textarea::placeholder {
+    color:var(--header-color);
+}
+
+
+.select_mark{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url(/assets/img/ui/inactiveList.svg);
+    background-size: auto 5px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    margin-right: 2%;
+    border: none;
+    outline: none;
+    background-color: var(--main-color);
+    width: 50%;
+    color: var(--header-color);
+    cursor: pointer;
+    height: 30px;
+    margin: 2%;border: 1px solid #ffffff;
+    box-sizing: content-box;
+    margin-left: 0
+}
